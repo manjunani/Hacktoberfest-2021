@@ -1,0 +1,67 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.top {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.clstxt {
+  text-align: center;
+}
+.img1 {
+  background-position: center;
+  background-size: contain;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  width: 100%;
+}
+.khali {
+  padding: 18px;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  overflow: hidden;
+}
+.ulli {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  padding-inline-start: 40px;
+}
+
+.endtxt {
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
