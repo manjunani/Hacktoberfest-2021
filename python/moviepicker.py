@@ -1,13 +1,19 @@
+## MOVIE PICKER SCRIPT
+
 # Importing modules which will be used by the project
 import random
 import requests
 from bs4 import BeautifulSoup
 # url for getting the movies
 url = 'https://www.imdb.com/chart/top'
+
 # Main Function
 def main():
-    response = requests.get(url) #requesting the url
-    html = response.text # accessing the url page as a text
+    #requesting the url
+    response = requests.get(url) 
+    
+    # accessing the url page as a text
+    html = response.text 
 
     soup = BeautifulSoup(html,'html.parser')
     innermovietags = soup.select('td.titleColumn a')
