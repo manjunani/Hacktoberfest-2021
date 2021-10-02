@@ -13,5 +13,6 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | biased_dice.py|In this the dice is biased means the probability of occuring 6 is more than any other number|
 |Occurences.py|To Count the Occurrences of Each Word in a Given String Sentence.|
 | numpy_basic.py|it is basic code to learn numpy|
+| dice_using_turtle | This is a simple dice with a graphical interface which was made using Turtle |
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
