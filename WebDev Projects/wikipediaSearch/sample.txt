@@ -1,0 +1,3 @@
+Hi There,
+This Project is a small pet project which fetches data from the wikipeda 
+done with the help of HTML, CSS and JS
