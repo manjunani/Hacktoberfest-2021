@@ -1,0 +1,1 @@
+This Folder is a basic example of how we can work with the JS in our WebPages..
