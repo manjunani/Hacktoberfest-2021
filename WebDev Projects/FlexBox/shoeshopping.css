@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    background-image: linear-gradient(to right, #659ebc, #2aaba8, #2aaba8);
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    color: white;
+    font-family: "Open Sans";
+    width: 90%;
+    max-width: 900px;
+}
+
+.description {
+    color: white;
+    font-family: "Open Sans";
+    width: 90%;
+    max-width: 900px;
+    margin-bottom: 48px;
+}
+
+.cards-container {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 230px;
+    background-color: white;
+    padding: 16px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.card-background-container {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nike-bg-image-1 {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/nike-shoes-1-img.png");
+}
+
+.nike-bg-image-2 {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/nike-shoes-2-img.png");
+}
+
+.nike-bg-image-3 {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/nike-shoes-3-img.png");
+}
+
+.card-description {
+    font-size: 16px;
+    color: #594d6d;
+}
+
+.badge {
+    background-color: #f7941d;
+    color: white;
+    padding-top: 4px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    font-size: 12px;
+    border-radius: 16px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+
+.icon-container {
+    background-color: #659ebc;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.icon {
+    color: white;
+    font-size: 22px;
+}
