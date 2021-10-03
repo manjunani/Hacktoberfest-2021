@@ -1,0 +1,75 @@
+*{
+    margin:0;
+}
+
+#middlediv{
+    position: absolute;
+    left:28%;
+}
+
+body{
+    background-image: url("https://www.pngmagic.com/product_images/blue-background-vector.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-origin:unset;
+
+}
+
+h1{
+text-align: center;
+color:white;
+font-size: 100px;
+text-shadow: 5px 0px 4px red;
+}
+
+img{
+    display:inline;
+    height:200px;
+    width:200px;
+}
+
+.playerdiv{
+    display:inline-block;
+    margin:50px;
+    padding:0;
+
+}
+
+.pname{
+    font-size: xx-large;
+    text-align: center;
+    margin:20px;
+    color:whitesmoke;
+    text-shadow: 3px 2px 3px greenyellow;
+}
+
+.dice{
+    width:9rem;
+    height:3rem;
+    display:block;
+    position: absolute;
+    left:40%;
+    border-radius: 10px;
+    background-color: rgb(236, 13, 32);
+    border-color: rgb(192, 5, 5);
+    outline-width: 3px;
+    border-width: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:whitesmoke
+
+}
+
+.instruction{
+    position:relative;
+    top: 70px;
+    left:3%;
+    color:white;
+    font-size: larger;
+    border:5px solid rgb(214, 4, 50);
+    width:34rem;
+    padding:5px;
+    background-color: rgb(240, 37, 88);
+}
+
