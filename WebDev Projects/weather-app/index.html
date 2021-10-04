@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Temperature</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="col-md-6 m-auto py-5">
+        <h1 class="text-center mt-5 mb-3">Check WeatherApp</h1>
+        <p class="text-center mb-5 mt-0 paragraph">
+          API courtesy:
+          <a href="https://openweathermap.org/api">OpenWeatherApp</a>
+        </p>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter a location for Weather ..."
+            id="city"
+          />
+          <div class="input-group-append">
+            <button type="button" onclick="search()" class="btn btn-danger">
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="weather-status text-center">
+        <img id="city-img" src="" alt="" />
+        <h1 id="city-name"></h1>
+        <h3 id="city-temp"><span></span></h3>
+        <h1 id="city-desc" class="lead"></h1>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
