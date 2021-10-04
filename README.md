@@ -38,6 +38,15 @@ Hacktoberfest is open to everyone in our global community. Whether you’re a de
 ###### ⚡  When you’re on the main page for the repository, you’ll see a button to "Star" and “Fork” the repository on your upper right-hand side of the page, underneath your user icon.
 
 <h2 align="center">😎🙏 Thanks to Our Awesome Contributors 🙏😎</h2>
+<a href="https://github.com/manjunani/HacktoberFest_2021/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=manjunani/HacktoberFest_2021" />
+</a>  
+
+## Feedback
+
+If you have any feedback please reach out to me on [LinkedIn](https://www.linkedin.com/in/manjunathasai/). 
+
+Feel Free to reach me at
 <div align="center">
 <a href="https://twitter.com/manjunatha_uppu">
  <img src="https://user-images.githubusercontent.com/63895602/122171696-a2b6ac00-ce9d-11eb-8831-2ec5964bdd5f.png" width="30" height="30">
@@ -52,13 +61,3 @@ Hacktoberfest is open to everyone in our global community. Whether you’re a de
 </div>
 
 
-
-## Contributors
-
-<a href="https://github.com/manjunani/HacktoberFest_2021/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=manjunani/HacktoberFest_2021" />
-</a>  
-
-## Feedback
-
-If you have any feedback please reach out to me on [LinkedIn](https://www.linkedin.com/in/manjunathasai/).   
