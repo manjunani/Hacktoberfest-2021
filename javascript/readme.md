@@ -5,10 +5,10 @@ Kindly update the QUALITY Code
 
 after adding the files here kindly **update the readme.md file** in the below table
 
-| Filename      | Description |
-| ----------- | ----------- |
-| ex. sample.js      | ex: it's use/how it work/implementation       |
-| fetchmovie.js|it fectches a list of movies data from IMDB data|
-
+| Filename       | Description                                      |
+| -------------- | ------------------------------------------------ |
+| ex. sample.js  | ex: it's use/how it work/implementation          |
+| fetchmovie.js  | it fectches a list of movies data from IMDB data |
+| login-check.js | check for valid user with login credential       |
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
