@@ -1,3 +1,5 @@
+# MAC Changer Snippet
+
 import random
 
 
