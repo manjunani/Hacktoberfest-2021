@@ -50,3 +50,15 @@ Hacktoberfest is open to everyone in our global community. Whether you’re a de
 </a>
 <!-- to use these icons, go to www.flaticon.com & copy the png to clipboard -->
 </div>
+
+
+
+## Contributors
+
+<a href="https://github.com/manjunani/HacktoberFest_2021/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=manjunani/HacktoberFest_2021" />
+</a>  
+
+## Feedback
+
+If you have any feedback please reach out to me on [LinkedIn](https://www.linkedin.com/in/manjunathasai/).   
