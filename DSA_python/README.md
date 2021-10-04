@@ -22,3 +22,15 @@ By : [Arush Mangal](https://github.com/arushmangal)
 DSA Problem from CodeChef (link in readme.md)\
 Solution written in Python with proper indentation and comments explaining the working of code\
 By : [Arush Mangal](https://github.com/arushmangal)
+
+### Write a Function.
+
+DSA Problem from HackerRank (Link in readme.md)\
+Solution written in Python with proper indentation and comments explaining the working of code\
+By : [Arush Mangal](https://github.com/arushmangal)
+
+### Min-Max Sum.
+
+DSA Problem from HackerRank (Link in readme.md)\
+Solution written in Python with proper indentation and comments explaining the working of code\
+By : [Arush Mangal](https://github.com/arushmangal)
