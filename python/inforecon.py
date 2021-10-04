@@ -1,6 +1,7 @@
 """This inforecon gathers the information of an website for further penetration
 testing"""
 
+
 import json
 import socket
 import sys
