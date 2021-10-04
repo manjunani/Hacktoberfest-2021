@@ -16,6 +16,7 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | dice_using_turtle | This is a simple dice with a graphical interface which was made using Turtle |
 | tictactoe.py | This is a working 2-player tictactoe game made using python made by [Arush Mangal](https://github.com/arushmangal) |
 | xc_to_m3u | Converts XtremeCode API to a M3U file to make iptv more compatible with other video players |
-
+| alarm-clock | Plays an alarm at the given time (Use 12 hour clock format) |
+| URL-Shortener | Shortens a URL using tinyurl api | 
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
