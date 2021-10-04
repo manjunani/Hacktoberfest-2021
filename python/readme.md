@@ -22,5 +22,5 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | alarm-clock | Plays an alarm at the given time (Use 12 hour clock format) |
 | URL-Shortener | Shortens a URL using tinyurl api | 
 | Rock-Paper-Scissor| Rock Paper Scisscor Game using Python |
-
+| OlympicsLogo.py | This is the Olympics Logo made using Turtle in Python |
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
