@@ -1,3 +1,4 @@
+# MD5 encryption cracker
 import argparse
 import hashlib
 
