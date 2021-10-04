@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--animate link-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
+
+</head>
+<body>
+    <div class="topdiv">
+    <h1 id="heading">DICE GAME</h1>
+    </div>
+<div id="middlediv">
+    <div class="playerdiv">
+        <p class="pname">Player 1</p>
+        <img src="images/dice1.png" id="check1" class="animated tada ">
+    </div>
+
+    <div class="playerdiv">
+        <p class="pname">Player 2</p>
+        <img src="images/dice5.png" id="check2" class="animated tada" >
+    </div>
+
+    <button class="dice" onclick="rolldice()">
+        Roll
+    </button>
+
+    <div class="instruction">
+        <p>
+        Instruction: Roll the Dices. Player with the larger dice value will Win!
+        </p> 
+    </div>
+</div>
+
+
+<script>
+rolldice = () => {
+    //player 1
+    const play1= Math.floor(Math.random()*6) + 1;
+    const play1dice = `images/dice${play1}.png`;
+    document.getElementById("check1").setAttribute('src', play1dice);
+
+    //player 2
+    const play2= Math.floor(Math.random()*6) + 1;
+    const play2dice = `images/dice${play2}.png`;
+    document.getElementById("check2").setAttribute('src', play2dice);
+
+
+    if(play1>play2) {
+        document.getElementById("heading").innerHTML= "Player 1 Won!";
+    }
+    else if(play1==play2) {
+        document.getElementById("heading").innerHTML= "Draw!";
+    }
+    else {
+        document.getElementById("heading").innerHTML= "Player 2 Won!";
+    }
+}
+
+</script>
+
+</body>
+</html>
