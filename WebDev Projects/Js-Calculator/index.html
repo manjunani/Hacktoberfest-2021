@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="image3.gif" type="image/gif" >
+</head>
+
+<body>
+	<div class="container">
+		<input type="text" id="useinp" placeholder="0" disabled />
+		<input type="text" id="compout" placeholder="0" disabled />
+		<table>
+			<tr>
+				<td onclick="calcad('(')">(</td>
+				<td onclick="calcad(')')">)</td>
+				<td onclick="removech()">&lt;-</td>
+				<td onclick="calcad('+')" class="vari">+</td>
+			</tr>
+			<tr>
+				<td onclick="calcad('7')">7</td>
+				<td onclick="calcad('8')">8</td>
+				<td onclick="calcad('9')">9</td>
+				<td onclick="calcad('-')" class="vari">-</td>
+			</tr>
+			<tr>
+				<td onclick="calcad('4')">4</td>
+				<td onclick="calcad('5')">5</td>
+				<td onclick="calcad('6')">6</td>
+				<td onclick="calcad('*')" class="vari">*</td>
+			</tr>
+			<tr>
+				<td onclick="calcad('1')">1</td>
+				<td onclick="calcad('2')">2</td>
+				<td onclick="calcad('3')">3</td>
+				<td onclick="calcad('/')" class="vari">/</td>
+			</tr>
+			<tr>
+				<td onclick="reset()"><b>C</b></td>
+				<td onclick="calcad('0')">0</td>
+				<td onclick="calcad('.')">.</td>
+				<td class="equalbtn" onclick="execm()">=</td>
+			</tr>
+		</table>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
