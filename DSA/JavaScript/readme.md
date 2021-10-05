@@ -17,3 +17,5 @@ linked_list.js  a linked list is a linear collection of data elements, in which 
 binary_search_tree.js :- It is a type of binary tree, in which nodes in the left sub-tree are smaller than the value of the root node while nodes in the right sub-tree are greater than or equal to the value of the root.
 
 Stack.js :- A stack is an abstract data type that holds an ordered, linear sequence of items. In contrast to a queue, a stack is a last in, first out (LIFO) structure.
+
+doubly_linked_list.js A doubly linked list, which is linear in nature and different from Linked-list in the way that it's node points to previoud node as well.
