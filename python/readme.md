@@ -23,4 +23,5 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | URL-Shortener | Shortens a URL using tinyurl api | 
 | Rock-Paper-Scissor| Rock Paper Scisscor Game using Python |
 | OlympicsLogo.py | This is the Olympics Logo made using Turtle in Python |
+| WebsiteAvailabilityChecker.py | Checks the website is available or not. |
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
