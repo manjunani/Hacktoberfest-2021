@@ -8,7 +8,6 @@ After adding the files here kindly **update the readme.md file** in the below ta
 
 | Filename         | Description                                                        |
 | ---------------- | ------------------------------------------------------------------ |
-| ex. sample.py    | ex: it's use/how it work/implementation                            |
 | moviepicker.py   | it fectches a list of movies names and their rating from IMDB data |
 | url_shortener.py | URL shortening program using pyshortener lib                       |
 | moviepicker.py|it fectches a list of movies names and their rating from IMDB data|
@@ -24,4 +23,6 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | Rock-Paper-Scissor| Rock Paper Scisscor Game using Python |
 | OlympicsLogo.py | This is the Olympics Logo made using Turtle in Python |
 | WebsiteAvailabilityChecker.py | Checks the website is available or not. |
+|phone_number_service_provider_finder.py|It gives out the which service provide that a phone number has|
+
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
