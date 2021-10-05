@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #4c4c4c url("../images/ken-cheung-KonWFWUaAuk-unsplash.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 850px;
+  display: flex;
+}
+
+video {
+  box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.speed {
+  background: #efefef;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+  border-radius: 50px;
+  box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.speed-bar {
+  width: 100%;
+  background: linear-gradient(-170deg, #2376ae 0%, #c16ecf 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  color: white;
+  height: 16.3%;
+}
+
+.attribution {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.65rem;
+  line-height: 1;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: bold;
+  }
+
+.attribution a:hover {
+  color: hsl(300, 69%, 78%);
+}
