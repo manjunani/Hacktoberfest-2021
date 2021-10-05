@@ -24,5 +24,6 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | OlympicsLogo.py | This is the Olympics Logo made using Turtle in Python |
 | WebsiteAvailabilityChecker.py | Checks the website is available or not. |
 |phone_number_service_provider_finder.py|It gives out the which service provide that a phone number has|
+|Dictionary_Definition.py|It provides the definition of the word available in the array|
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
