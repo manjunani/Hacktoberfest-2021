@@ -1,11 +1,36 @@
-Hi There,
 
-Add the files in the readme in the below format
+Stack Python project
 
-| Filename      | Description |
-| ----------- | ----------- |
-| ex: algname.py      | ex: it's use/ how it works/ it's complexity etc.,  |
+DSA Algorithm = Stack //
+Time Complexity = O(1) //
+Written in = Python 
 
+### Find the Runner-Up Score
 
+DSA Problem from HackerRank (Link given in readme.md)\ 
+Solution written in Python with proper indentation and comments explaining working of code\
+By : [Arush Mangal](https://github.com/arushmangal)
 
-watch this video [How to create a PULL REQUEST](https://youtu.be/rgbCcBNZcdQ)
+### What's your name?
+
+DSA Problem from HackerRank (Link in readme.md)\
+Solution written in Python with proper indentation and comments explaining the working of code\
+By : [Arush Mangal](https://github.com/arushmangal)
+
+### Reverse a Number.
+
+DSA Problem from CodeChef (link in readme.md)\
+Solution written in Python with proper indentation and comments explaining the working of code\
+By : [Arush Mangal](https://github.com/arushmangal)
+
+### Write a Function.
+
+DSA Problem from HackerRank (Link in readme.md)\
+Solution written in Python with proper indentation and comments explaining the working of code\
+By : [Arush Mangal](https://github.com/arushmangal)
+
+### Min-Max Sum.
+
+DSA Problem from HackerRank (Link in readme.md)\
+Solution written in Python with proper indentation and comments explaining the working of code\
+By : [Arush Mangal](https://github.com/arushmangal)
