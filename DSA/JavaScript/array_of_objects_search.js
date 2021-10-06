@@ -3,21 +3,15 @@ const _ = require("lodash");
 module.exports.ArraySearch = class {
   constructor(data) {
     this.indexes = [];
-    this.data = data; // object or array to be searched
+    this.data = data; 
   }
-  /**
-   * 
-   * @param {*} index 
-   */
+
   addIndex(index) {
     if(_.isArray(index)) return this.indexes = _.concat(this.indexes, index)
      this.indexes.push(index);
   }
 
-  /**
-   * @Info A recursive function to get the value of an index at any depth in an object
-   * @param {*, *} (index, object )
-   */
+  
   getIndexValue(index, object){
     let temp = object;
     const indexes = `${index}`.split(".");
@@ -27,11 +21,7 @@ module.exports.ArraySearch = class {
     return temp;
   }
 
-  /**
-   * 
-   * @param {*} keyword 
-   * @returns Promise that resolves a result matching the keyword at the specified indexes
-   */
+
   find(keyword) {
     return new Promise((resolve, reject) => {
       try {
