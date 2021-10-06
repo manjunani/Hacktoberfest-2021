@@ -6,6 +6,7 @@ Kindly update the **QUALITY** Code
 After adding the files here kindly **update the readme.md file** in the below table
 
 
+
 | Filename         | Description                                                        |
 | ---------------- | ------------------------------------------------------------------ |
 | moviepicker.py   | it fectches a list of movies names and their rating from IMDB data |
@@ -25,5 +26,6 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | WebsiteAvailabilityChecker.py | Checks the website is available or not. |
 |phone_number_service_provider_finder.py|It gives out the which service provide that a phone number has|
 |Dictionary_Definition.py|It provides the definition of the word available in the array|
+| webscraping.py | This script scrapes the Weather data for the city of Los Angeles from the link : [https://forecast.weather.gov/](https://forecast.weather.gov/MapClick.php?lat=34.05361000000005&lon=-118.24549999999999#.X2DWvmgzZPY) |
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
