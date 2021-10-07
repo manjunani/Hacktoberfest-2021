@@ -32,6 +32,7 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | person_detection-image.py | detectes person in images |
 |face.py | detects face from images/videos |
 |n0GuessGame.py | it's a number guessing game |
+|1st_PYGAME(Worm.io).py | It's a worm game with audio |
 
 
 
