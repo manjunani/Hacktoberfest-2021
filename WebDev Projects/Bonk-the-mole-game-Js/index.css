@@ -1,0 +1,43 @@
+body {
+    background-color: cornflowerblue;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: darkmagenta;
+    width: 400px;
+    height: 400px;
+}
+
+.square {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-style: outset;
+    border-color: slateblue;
+    background-color: chocolate;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    width: 258px;
+    height: 258px;
+    justify-content: center;
+    align-content: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mole {
+    background-image: url('mole.png');
+    background-size: cover;
+}
