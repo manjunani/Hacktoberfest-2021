@@ -34,6 +34,7 @@ After adding the files here kindly **update the readme.md file** in the below ta
 |face.py | detects face from images/videos |
 |n0GuessGame.py | it's a number guessing game |
 |1st_PYGAME(Worm.io).py | It's a worm game with audio |
+|BlowfishAlgo.py | Python program for implementing Blowfish Encryption-Decryption Algorithm |
 
 
 
