@@ -1,9 +1,9 @@
 <h1 align="center"> 🎃 HacktoberFest-2021 🎃</h1>
 
 
-**Official Repository by for Hacktoberfest**
+**Repository for Hacktoberfest**
 
-__Get your free T-shirt with us 😉__
+**Note: We are actively focusing on Machine Learning, Data Science and Tricky Python projects.**
 
 ![Opensource](https://img.shields.io/badge/openSource-%E2%9D%A4-blue) ![PR](https://img.shields.io/badge/PRs-welcome-green) ![hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2021-red) ![friendly](https://img.shields.io/badge/beginner-friendly-l)
 
