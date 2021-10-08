@@ -12,6 +12,11 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | moviepicker.py   | it fectches a list of movies names and their rating from IMDB data |
 | url_shortener.py | URL shortening program using pyshortener lib                       |
 | moviepicker.py|it fectches a list of movies names and their rating from IMDB data|
+| digital.py|a simple digital clock written in python using tkinter|
+| inforecon.py|this is an inforecon which can be used to get information about target|
+| md5crack.py|this script can crack any md5 encryption|
+| nmapscanner.py|it is nmap scanner script|
+| phone.py|it gives detail of any phone number|
 | turtle-design.py|it creates design with help of python turtle library|
 | biased_dice.py|In this the dice is biased means the probability of occuring 6 is more than any other number|
 |Occurences.py|To Count the Occurrences of Each Word in a Given String Sentence.|
@@ -35,8 +40,6 @@ After adding the files here kindly **update the readme.md file** in the below ta
 |n0GuessGame.py | it's a number guessing game |
 |1st_PYGAME(Worm.io).py | It's a worm game with audio |
 |BlowfishAlgo.py | Python program for implementing Blowfish Encryption-Decryption Algorithm |
-
-
 
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
