@@ -1,4 +1,4 @@
-# Hangman Game with Python
+# Hangman Game in Python
 
 ## Playing this game
 ### Rules
