@@ -40,6 +40,7 @@ After adding the files here kindly **update the readme.md file** in the below ta
 |n0GuessGame.py | it's a number guessing game |
 |1st_PYGAME(Worm.io).py | It's a worm game with audio |
 |BlowfishAlgo.py | Python program for implementing Blowfish Encryption-Decryption Algorithm |
+|celecius_to_farenheit.py | A function which convert Celsius value to Fahrenheit |
 
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
