@@ -1,9 +1,9 @@
 <h1 align="center"> 🎃 HacktoberFest-2021 🎃</h1>
 
 
-**Official Repository by for Hacktoberfest**
+**Repository for Hacktoberfest**
 
-__Get your free T-shirt with us 😉__
+**Note: We are actively focusing on Machine Learning, Data Science and Tricky Python projects.**
 
 ![Opensource](https://img.shields.io/badge/openSource-%E2%9D%A4-blue) ![PR](https://img.shields.io/badge/PRs-welcome-green) ![hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2021-red) ![friendly](https://img.shields.io/badge/beginner-friendly-l)
 
@@ -38,6 +38,15 @@ Hacktoberfest is open to everyone in our global community. Whether you’re a de
 ###### ⚡  When you’re on the main page for the repository, you’ll see a button to "Star" and “Fork” the repository on your upper right-hand side of the page, underneath your user icon.
 
 <h2 align="center">😎🙏 Thanks to Our Awesome Contributors 🙏😎</h2>
+<a href="https://github.com/manjunani/HacktoberFest_2021/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=manjunani/HacktoberFest_2021" />
+</a>  
+
+## Feedback
+
+If you have any feedback please reach out to me on [LinkedIn](https://www.linkedin.com/in/manjunathasai/). 
+
+Feel Free to reach me at
 <div align="center">
 <a href="https://twitter.com/manjunatha_uppu">
  <img src="https://user-images.githubusercontent.com/63895602/122171696-a2b6ac00-ce9d-11eb-8831-2ec5964bdd5f.png" width="30" height="30">
@@ -50,3 +59,5 @@ Hacktoberfest is open to everyone in our global community. Whether you’re a de
 </a>
 <!-- to use these icons, go to www.flaticon.com & copy the png to clipboard -->
 </div>
+
+

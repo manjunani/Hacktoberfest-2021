@@ -1,0 +1,52 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	background-image: url('image1.jpg');
+	color:rgb(42, 42, 42);
+	font-family:Arial, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.container {
+	width: 400px;
+	background: #fff;
+	box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+input{
+	padding:16px 10px;
+	width:100%;
+	border:0;
+	font-size:2em;
+	background-color:#333;
+	color:#eee;
+	text-align:right;
+}
+table{
+	border-collapse:collapse;
+	width: 100%;
+}
+td{
+	font-size:2em;
+	padding:0.7em;
+	text-align: center;
+	cursor:default;
+	transition:0.2s;
+}
+td:hover{
+	background-color:rgb(199, 199, 199);
+}
+.vari{
+	background-color:rgb(70, 70, 70);
+	color: #eee;
+}
+.vari:hover{
+	background-color:#222;
+}
+.equalbtn {
+	background: rgb(255, 160, 51);
+}

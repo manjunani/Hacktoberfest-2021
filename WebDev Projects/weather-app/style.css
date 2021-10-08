@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: url(weather.jfif) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.paragraph {
+  font-style: italic;
+}
+.paragraph a {
+  color: black;
+}
+.paragraph a:hover {
+  text-decoration: none;
+  color: black;
+}

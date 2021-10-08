@@ -1,0 +1,3 @@
+Hi There,
+
+This Project is a sample responsive website which was made with the help of only HTML and CSS

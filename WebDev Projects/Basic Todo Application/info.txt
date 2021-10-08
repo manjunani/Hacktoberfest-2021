@@ -1,0 +1,1 @@
+This Folder is a basic Todo Application which is a responsive and made with the help of BOOTSTRAP, CSS, HTML, JS.
