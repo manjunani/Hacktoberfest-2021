@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+.game {
+  background-color: #e2ab1c;
+  width: 80%;
+  height: 80vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+}
+/* utlis */
+.btn {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(189, 183, 27);
+  color: black;
+  font-size: 1.2rem;
+  border: 1px solid white;
+}
+.btn-replay {
+  display: none;
+}
+
+/* main start here */
+/* front modal */
+.home {
+  z-index: 5;
+  position: absolute;
+}
+.home .header,
+.game .title {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: auto;
+}
+.home .header h1 {
+  letter-spacing: 4px;
+  word-spacing: 7px;
+}
+.home ol li {
+  margin-bottom: 23px;
+}
+/* actual game */
+.game .title {
+  font-size: 2rem;
+}
+.game hr {
+  width: 50%;
+  color: black;
+}
+.game .result {
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+}
+.game .userInput {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  align-items: center;
+  justify-content: space-between;
+}
+.game .userInput input {
+  width: 110px;
+  height: 50px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.game .chance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.game .chance h3 {
+  margin-right: 5px;
+  font-weight: 100;
+}
+.game .chance .score {
+  font-size: 1.2rem;
+}
+
+.result {
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+.result .message {
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .game {
+    width: 80%;
+    height: 80vh;
+  }
+  .home .header h1 {
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .game {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .game .title {
+    font-size: 2rem;
+  }
+  .home .header h1 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .game {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .game .title {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 250px;
+  }
+  .home .header h1 {
+    font-size: 1rem;
+  }
+  .home ol li {
+    font-size: 0.8rem;
+  }
+  .result .message {
+    font-size: 0.6em;
+  }
+  .result {
+    width: 300px;
+  }
+}
