@@ -41,6 +41,7 @@ After adding the files here kindly **update the readme.md file** in the below ta
 |1st_PYGAME(Worm.io).py | It's a worm game with audio |
 |BlowfishAlgo.py | Python program for implementing Blowfish Encryption-Decryption Algorithm |
 | Numpy Methods.ipynb | This notebook contains the detailed code explaination of Numpy methods from basic to intermediate level |
+| Matplotlib Methods.ipynb | This notebook contains the detailed code explaination of Matplotlib methods from basic to intermediate level |
 
 
 
