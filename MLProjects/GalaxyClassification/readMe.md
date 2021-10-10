@@ -1,0 +1,1 @@
+Classification of galaxies is a very important application of machine learning - since the data for galaxies need further exploration, it is a budding field for machine learning enthusiasts who also have an interest in astronomy.
