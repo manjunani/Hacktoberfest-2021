@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Robot</title>
+</head>
+
+<body>
+    <div class="sections">
+        <div class="bot-ground">
+            <div class="bot">
+                <div class="beep"></div>
+                <div class="brain"></div>
+                <div class="torso"></div>
+                <div class="foot"></div>
+            </div>
+            <div class="ground"></div>
+        </div>
+        <div class="actions">
+            <button class="talk" onclick="talk()">BOT likes to greet</button>
+            <button class="move" onclick="move()">MOVE</button>
+            <button class="no-gravity bot-gravity-off" onclick="gravity()">TURN OFF Gravity</button>
+            <div class="bot-status">
+                <div class="bot-status-dot bot-offline"></div>
+                <div class="bot-message"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
