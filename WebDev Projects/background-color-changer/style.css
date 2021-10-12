@@ -16,3 +16,7 @@ button{
 	text-transform: uppercase;
 	cursor: pointer;
 }
+button:hover
+{
+	border: 2px solid rgb(63, 3, 60)
+}
