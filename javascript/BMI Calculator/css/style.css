@@ -1,0 +1,63 @@
+body{
+    background-image: linear-gradient(to right, #5c72ff, #8c3fff);
+}
+
+.row{
+    height: 100vh;
+    align-items: center;
+}
+
+.card{
+    width: 500px;
+    left: 30%;
+}
+
+.input-fields label{
+    margin-left: -200px !important;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input-fields input{
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #2B2B2B;
+    padding-bottom: 5px;
+    min-width: 250px;
+    color: #000;
+}
+
+.input-fields input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #8c3fff;
+    padding-bottom: 5px;
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+.btn{
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #ff9234, #fc6274 100%);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    background-image: linear-gradient(to right, #ff9234, #fc6274 100%);
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+#result{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
