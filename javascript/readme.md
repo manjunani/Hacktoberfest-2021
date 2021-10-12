@@ -10,6 +10,7 @@ Add the files in the readme in the below format
 | [login-check.js.js](https://github.com/manjunani/HacktoberFest_2021/blob/main/javascript/login-check.js) | adding javascript login checker program I build using js objects|
 | [binary-agents.js](https://github.com/SyedZawwarAhmed/HacktoberFest_2021/blob/my-branch/javascript/binary-agents.js) | Added binary agents algorithm made using js |
 | [SimpleCart.js](https://github.com/SyedZawwarAhmed/HacktoberFest_2021/blob/my-branch/javascript/SimpleCart.js) | Added simple carts system using js |
+| [ProgressiveTax.js](https://github.com/SyedZawwarAhmed/HacktoberFest_2021/blob/my-branch/javascript/ProgressiveTax.js) | Added example of calculate Progressive Tax using JS |
 
 watch this video [How to create a PULL REQUEST](https://youtu.be/rgbCcBNZcdQ)
 
