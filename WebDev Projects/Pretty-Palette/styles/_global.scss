@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  color: rgb(51, 51, 51);
+}
+button {
+  font-family: "Mulish", sans-serif;
+}
+i,
+svg,
+path {
+  pointer-events: none;
+}

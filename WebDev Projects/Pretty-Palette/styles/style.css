@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #333333;
+}
+
+button {
+  font-family: "Mulish", sans-serif;
+}
+
+i,
+svg,
+path {
+  pointer-events: none;
+}
+
+.colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  color: #d4d4d4;
+}
+
+.color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.color h2 {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.sliders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  position: absolute;
+  background: white;
+  opacity: 0;
+  bottom: 0%;
+  padding: 1rem;
+  width: 80%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  pointer-events: none;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sliders button {
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  background: black;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+}
+
+.panel button {
+  outline: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+  border: none;
+  margin: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.panel p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.library-panel,
+.generate-panel,
+.save-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sliders.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  pointer-events: all;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.controls button {
+  outline: none;
+  margin: 1rem;
+  background: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.copy-container,
+.save-container,
+.library-container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copy-container .copy-popup,
+.copy-container .save-popup,
+.copy-container .library-popup,
+.save-container .copy-popup,
+.save-container .save-popup,
+.save-container .library-popup,
+.library-container .copy-popup,
+.library-container .save-popup,
+.library-container .library-popup {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  min-width: 30%;
+  min-height: 30vh;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.copy-container .copy-popup .close-save,
+.copy-container .copy-popup .close-library,
+.copy-container .save-popup .close-save,
+.copy-container .save-popup .close-library,
+.copy-container .library-popup .close-save,
+.copy-container .library-popup .close-library,
+.save-container .copy-popup .close-save,
+.save-container .copy-popup .close-library,
+.save-container .save-popup .close-save,
+.save-container .save-popup .close-library,
+.save-container .library-popup .close-save,
+.save-container .library-popup .close-library,
+.library-container .copy-popup .close-save,
+.library-container .copy-popup .close-library,
+.library-container .save-popup .close-save,
+.library-container .save-popup .close-library,
+.library-container .library-popup .close-save,
+.library-container .library-popup .close-library {
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.copy-container .copy-popup .submit-save,
+.copy-container .save-popup .submit-save,
+.copy-container .library-popup .submit-save,
+.save-container .copy-popup .submit-save,
+.save-container .save-popup .submit-save,
+.save-container .library-popup .submit-save,
+.library-container .copy-popup .submit-save,
+.library-container .save-popup .submit-save,
+.library-container .library-popup .submit-save {
+  outline: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.copy-container .copy-popup .save-name,
+.copy-container .save-popup .save-name,
+.copy-container .library-popup .save-name,
+.save-container .copy-popup .save-name,
+.save-container .save-popup .save-name,
+.save-container .library-popup .save-name,
+.library-container .copy-popup .save-name,
+.library-container .save-popup .save-name,
+.library-container .library-popup .save-name {
+  width: 40%;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: "Mulish", sans-serif;
+}
+
+.copy-container .copy-popup h4,
+.copy-container .save-popup h4,
+.copy-container .library-popup h4,
+.save-container .copy-popup h4,
+.save-container .save-popup h4,
+.save-container .library-popup h4,
+.library-container .copy-popup h4,
+.library-container .save-popup h4,
+.library-container .library-popup h4 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.copy-container.active,
+.save-container.active,
+.library-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.copy-popup.active,
+.save-popup.active,
+.library-popup.active {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+
+.custom-palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.custom-palette h4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.custom-palette div {
+  height: 5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.small-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.pick-palette-btn {
+  height: 5rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.mode-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.dark .mode-btn {
+  background: black;
+  color: white;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.dark .mode-panel {
+  background: black;
+}
+
+.dark p {
+  color: white;
+}
+
+.dark .mode-popup {
+  background: black;
+  color: white;
+}
+
+.dark .mode-close {
+  background: white;
+  color: black;
+}
+
+.dark .submit-save {
+  background: white;
+  color: black;
+}
+
+.dark .mode-sliders {
+  background: black;
+  color: white;
+}
+
+.dark span {
+  color: white;
+}
+
+.light .mode-btn {
+  background: white;
+  color: black;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(180, 179, 179, 0.4);
+          box-shadow: 0px 0px 10px 5px rgba(180, 179, 179, 0.4);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.light .mode-close {
+  background: black;
+  color: white;
+}
+
+.light .submit-save {
+  background: black;
+  color: white;
+}
+
+.light span {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
