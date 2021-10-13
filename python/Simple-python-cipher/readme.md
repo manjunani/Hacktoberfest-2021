@@ -1,1 +1,1 @@
-This is a ceaser cypher program
+This is a ceaser cipher program
