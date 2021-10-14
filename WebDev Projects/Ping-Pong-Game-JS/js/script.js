@@ -60,6 +60,23 @@ const ball = {
   color: '#05EDFF'
 };
 
+/**
+ * Changing Ball Speed
+ */
+
+function slowBall()
+{
+  ball.speed=3;
+}
+function normalBall()
+{
+  ball.speed=7;
+}
+function fastBall()
+{
+  ball.speed=9;
+}
+
 /* objects declaration ends */
 
 /* drawing functions */

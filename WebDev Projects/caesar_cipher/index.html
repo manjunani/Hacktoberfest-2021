@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="mt-5">
+    <h1 class="display-4 text-center my-5">Caesar Cipher</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card my-5">
+            <div class="card-header">Encrypt</div>
+            <form onSubmit="encrypt(); return false">
+              <div class="card-body">
+                <div class="form-group">
+                  <label>Plain Text:</label>
+                  <textarea
+                    cols="20"
+                    rows="10"
+                    class="form-control"
+                    placeholder="Your Text"
+                    id="plainText"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group col-lg-3">
+                  <label>Key:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="keyEncrypt"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Encrypted:</label>
+                  <textarea
+                    cols="20"
+                    rows="10"
+                    class="form-control"
+                    id="encrypted"
+                    readonly
+                  ></textarea>
+                </div>
+              </div>
+              <div class="card-footer text-end">
+                <button type="submit" class="btn btn-primary">Encrypt</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg">
+          <div class="card my-5">
+            <div class="card-header">Decrypt</div>
+            <form onSubmit="decrypt(); return false">
+              <div class="card-body">
+                <div class="form-group">
+                  <label>Encrypted Text:</label>
+                  <textarea
+                    cols="20"
+                    rows="10"
+                    class="form-control"
+                    placeholder="Your Encrypted Text"
+                    id="strEncrypted"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group col-lg-3">
+                  <label>Key:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="keyDecrypt"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Decrypted:</label>
+                  <textarea
+                    cols="20"
+                    rows="10"
+                    class="form-control"
+                    id="decrypted"
+                    readonly
+                  ></textarea>
+                </div>
+              </div>
+              <div class="card-footer text-end">
+                <button type="submit" class="btn btn-primary">Decrypt</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="mx-auto my-5">
+        <div class="card">
+          <div class="card-header">Decrypt Bruteforce</div>
+          <form onSubmit="decryptBruteForce(); return false">
+            <div class="card-body">
+              <div class="form-group">
+                <label>Encrypted Text:</label>
+                <textarea
+                  cols="20"
+                  rows="10"
+                  class="form-control"
+                  placeholder="Your Encrypted Text"
+                  id="strEncryptedBF"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label>Decrypted:</label>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th width="10%">Key</th>
+                      <th>Decrypted</th>
+                    </tr>
+                  </thead>
+                  <tbody id="decryptedBF">
+                    <tr>
+                      <td colspan="2" class="text-center">No Data</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer text-end">
+              <button type="submit" class="btn btn-primary">Decrypt</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

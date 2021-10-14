@@ -15,15 +15,49 @@
       body {
         width: 100vw;
         height: 100vh;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
         align-items: center;
+      }
+      #slow, #normal , #fast{
+        padding:10px;
+        border:2px solid black;
+        background: green;
+        color: white;
+        margin: 2px;
+        border-radius:5px;
+      }
+      .buttons
+      {
+        display: flex;
+        justify-items: center;
+      }
+      #slow
+      {
+        background-color: rgb(0, 179, 110);
+      }
+
+      #normal
+      {
+        background-color: rgb(0, 119, 255);
+      }
+      #fast
+      {
+        background-color: rgb(199, 70, 65);
       }
     </style>
   </head>
   <body>
     <!-- our "canvas" where we draw things-->
-    <canvas id="canvas" width="600" height="400"></canvas>
+    <div class="buttons">
+    <button id="slow" onclick="slowBall()">Slow Ball</button>
+    <button id = "normal" onclick="normalBall()">Normal Ball</button>
+    <button id="fast" onclick = "fastBall()"> Fast Ball</button>
+    </div>
+    <div>
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </div>
 
     <!-- link to script.js -->
     <script type="text/javascript" src="js/script.js"></script>

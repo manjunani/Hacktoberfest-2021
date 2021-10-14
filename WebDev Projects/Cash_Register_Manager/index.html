@@ -11,43 +11,61 @@
 
 <body>
   <h1>Cash Register Manager💸 </h1>
-
   <p class="para">Enter the amount of cash given by the customer and know minimum number of notes to be given to the customer</p>
   </p>
+<div class="section-main">
+  <div>
+  <div class="amount-div">
+    <div>
+    <h2>Bill Amount:</h2>
+    <input id="billAmount"></input>
+    </div>
+    <div>
+      <h2>Cash Given:</h2>
+      <input id="cash-given"></input>
+    </div>
+    
+  </div>
+  <div class="btn-msg">
+    <button id="check-btn" type="button" name="button">Check</button>
+    <p id="error-msg"></p>
+  </div>
+  </div>
+  
+    <div class="return-change-div">
+      <h2 class="return-change">Return Change</h2>
+      <table id="table">
+      <tr>
+        <th>No of Notes</th>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        
+      </tr>
+      <tr>
+        <th>Note</th>
+        <td>2000</td>
+        <td>500</td>
+        <td>200</td>
+        <td>100</td>
+        <td>20</td>
+        <td>10</td>
+        <td>5</td>
+        <td>2</td>
+        <td>1</td>
+  
+      </tr>
+    </table>
+    </div>
+    
+</div>
 
-
-  <h2>Bill Amount:</h2>
-  <input id="billAmount"></input>
-  <h2>Cash Given:</h2>
-  <input id="cash-given"></input>
-  <button id="check-btn" type="button" name="button">Check</button>
-  <p id="error-msg"></p>
-  <h2 class="return-change">Return Change</h2>
-  <table id="table">
-    <tr>
-      <th>No of Notes</th>
-
-      <td class="no-of-notes"></td>
-      <td class="no-of-notes"></td>
-      <td class="no-of-notes"></td>
-      <td class="no-of-notes"></td>
-      <td class="no-of-notes"></td>
-      <td class="no-of-notes"></td>
-      <td class="no-of-notes"></td>
-
-    </tr>
-    <tr>
-      <th>Note</th>
-      <td>2000</td>
-      <td>500</td>
-      <td>100</td>
-      <td>20</td>
-      <td>10</td>
-      <td>5</td>
-      <td>1</td>
-
-    </tr>
-  </table>
   <footer class="footer">
   <p>Created with ♡ by Kavya Kunder</p>
 </footer>
