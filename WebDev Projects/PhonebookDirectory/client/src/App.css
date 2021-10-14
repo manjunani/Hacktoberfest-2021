@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  height: 100vh;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+h1,h4{
+  text-align: center;
+  color:#0e1926;
+}
+.inputs{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs input{
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+  padding-left: 25px;
+  color: #0e1926;
+}
+.inputs button{
+  margin-top: 20px;
+  border: none;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  background:linear-gradient(to right,#203855 0,#17283d 50%,#0e1926 100%);
+  color: #fff;
+}
+.listOfFriends{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.friendContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.friend{
+  width: 500px; 
+  height:60px;
+  background:linear-gradient(to right,#203855 0,#17283d 50%,#0e1926 100%);
+  font-family: 'Montserrat';
+  font-weight:800;
+  font-size:15px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.friend h3{
+  margin-left: 15px;
+}
+.friendContainer button{
+  width: 60px;
+  height: 60px;
+}
