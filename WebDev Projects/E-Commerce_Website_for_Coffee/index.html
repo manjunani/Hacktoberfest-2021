@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Coffee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar has-shadow is-white">
+        <!-- logo / brand -->
+            <div class="navbar-brand">
+                <a href="/index.html" class="navbar-item">
+                    <img src="assets/logo.png" alt="site logo" style="max-height: 70px" class="py-2 px-2">
+                </a>
+
+                <a class="navbar-burger mt-4" id="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="navbar-links">
+                <div class="navbar-end">
+                    <a class="navbar-item">My Account</a>
+                    <a class="navbar-item">Shopping Cart (0)</a>
+                </div>
+            </div>
+    </nav>
+
+    <!-- breadcrumbs -->
+    <div class="section pt-4 pb-0">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="is-size-6 container">
+                <li><a href="#" class="has-text-grey">Coffee Ninja</a></li>
+                <li><a href="#" class="has-text-grey">Shop</a></li>
+                <li class="is-active"><a href="#">Docker Dark Roast</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- product info -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-6-tablet is-3-desktop">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+                    <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illo libero asperiores commodi aspernatur porro?</p>
+                </div>
+                <div class="column is-6-tablet is-5-desktop has-text-centered">
+                    <img src="assets/product.png" alt="Docker(Dark Roast)" class="px-6">
+                </div>
+                <div class="column is-12-tablet is-4-desktop">
+                    <div class="is-size-4 mb-4">$32.67</div>
+                    <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, facere!</p>
+                    <button class="button is-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- tabs section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column is-7-tablet">
+                    <!-- tabs -->
+                    <div class="tabs is-boxed is-centered">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>Product Details</a>
+                            </li>
+                            <li data-target="delivery-information">
+                                <a>Delivery Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-5 title">Product Details</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit voluptates!
+                                Quisquam dolores distinctio minima eligendi, sint enim quaerat. Totam eaque eligendi quis,
+                                itaque beatae id sit fuga voluptatibus a autem debitis sequi, officiis dolores corporis!
+                                Necessitatibus, libero voluptate? Fuga, natus iusto! Perspiciatis iure officiis rerum, illo
+                                temporibus iusto voluptatum.</p>
+                        </div>
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-size-5 title">Delivery Information</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit voluptates!
+                                Quisquam dolores distinctio minima eligendi, sint enim quaerat. Totam eaque eligendi quis,
+                                itaque beatae id sit fuga voluptatibus a autem debitis sequi, officiis dolores corporis!
+                                Necessitatibus, libero voluptate? Fuga, natus iusto! Perspiciatis iure officiis rerum, illo
+                                temporibus iusto voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5-tablet">
+                   <div class="message">
+                       <div class="message-header">
+                           <p>Earn points with the Coffee Club</p>
+                       </div>
+                       <div class="message-body">
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro molestiae sint magnam quo nostrum at animi ducimus perferendis accusamus inventore omnis ullam, quidem voluptate optio autem eum nesciunt distinctio fugiat.</p>
+                            <div class="has-text-centered">
+                                <button class="button mt-5" id="signup">Sign Up</button>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards -->
+    <section class="section is-hidden-mobile">
+        <div class="container">
+            <h3 class="title has-text-centered is-size-4">Related Products</h3>
+            <div class="mt-5 columns is-centered is-8 is-variable">
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/p1.png" alt="Placeholder image">
+                        </div>
+                        <div class="card-content">
+                            <p>£12.95</p>
+                            <p class="title is-size-5">Cortardo Cup</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="" class="has-text-grey">View</a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/p2.png" alt="Placeholder image">
+                        </div>
+                        <div class="card-content">
+                            <p>£12.95</p>
+                            <p class="title is-size-5">Cortardo Cup</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="" class="has-text-grey">View</a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/p3.png" alt="Placeholder image">
+                        </div>
+                        <div class="card-content">
+                            <p>£12.95</p>
+                            <p class="title is-size-5">Cortardo Cup</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="" class="has-text-grey">View</a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+            <h3 class="title mb-6">Join the Club</h3>
+            <form>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            I agree to the <a href="#">terms and conditions</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-6 has-text-centered">
+                    <button class="button is-warning">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer mt-6">
+        <div class="content has-text-centered">
+            <p>Copyright 2020 Coffee Ninja</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

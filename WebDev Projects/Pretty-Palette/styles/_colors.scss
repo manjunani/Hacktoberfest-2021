@@ -1,0 +1,272 @@
+.colors {
+  display: flex;
+  min-height: 80vh;
+  color: rgb(212, 212, 212);
+}
+
+.color {
+  @include flex(column, space-evenly, center);
+  height: 80vh;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  h2 {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.sliders {
+  @include flex(column, none, none);
+  position: absolute;
+  background: white;
+  opacity: 0;
+  bottom: 0%;
+  padding: 1rem;
+  width: 80%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  pointer-events: none;
+  // We are adding adjustment class
+  transform: translateY(100px);
+  transition: all 0.5s ease-in-out;
+
+  button {
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    background: black;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+.panel {
+  @include flex(row, space-evenly, center);
+  height: 20vh;
+
+  button {
+    outline: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background: black;
+    color: white;
+    border: none;
+    margin: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.library-panel,
+.generate-panel,
+.save-panel {
+  @include flex(column, center, center);
+}
+
+.sliders.active {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
+
+.controls {
+  @include flex(column, center, center);
+  transition: all 0.5s ease;
+  button {
+    outline: none;
+    margin: 1rem;
+    background: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+// Slider
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.copy-container,
+.save-container,
+.library-container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  @include flex(row, center, center);
+
+  .copy-popup,
+  .save-popup,
+  .library-popup {
+    background: white;
+    @include flex(column, space-evenly, center);
+    border-radius: 2rem;
+    min-width: 30%;
+    min-height: 30vh;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-2rem);
+
+    .close-save,
+    .close-library {
+      outline: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.5rem;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-top-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+    .submit-save {
+      outline: none;
+      border-radius: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .save-name {
+      width: 40%;
+      outline: none;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      font-family: "Mulish", sans-serif;
+    }
+
+    h4 {
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  }
+}
+
+.copy-container.active,
+.save-container.active,
+.library-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.copy-popup.active,
+.save-popup.active,
+.library-popup.active {
+  transform: translateY(0rem);
+}
+
+// Library
+
+.custom-palette {
+  @include flex(row, space-evenly, center);
+  width: 100%;
+  padding: 2rem;
+  flex-wrap: wrap;
+
+  h4 {
+    flex: 1;
+  }
+  div {
+    height: 5rem;
+    flex: 1;
+  }
+}
+
+.small-preview {
+  display: flex;
+  flex: 1;
+}
+
+.pick-palette-btn {
+  height: 5rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.mode-btn {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.dark {
+  .mode-btn {
+    background: black;
+    color: white;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease-in-out;
+  }
+  .mode-panel {
+    background: black;
+  }
+  p {
+    color: white;
+  }
+  .mode-popup {
+    background: black;
+    color: white;
+  }
+  .mode-close {
+    background: white;
+    color: black;
+  }
+  .submit-save {
+    background: white;
+    color: black;
+  }
+  .mode-sliders {
+    background: black;
+    color: white;
+  }
+  span {
+    color: white;
+  }
+}
+.light {
+  .mode-btn {
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 10px 5px rgba(180, 179, 179, 0.4);
+    transition: all 0.5s ease-in-out;
+  }
+  .mode-close {
+    background: black;
+
+    color: white;
+  }
+  .submit-save {
+    background: black;
+    color: white;
+  }
+  span {
+    color: black;
+  }
+}

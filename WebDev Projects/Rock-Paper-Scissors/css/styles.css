@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans Extrabold", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(9, 3, 126) 0%,
+    rgb(9, 121, 116) 0%,
+    rgb(211, 37, 144) 100%
+  );
+}
+
+.title h1 {
+  font-size: 4rem;
+}
+
+.result {
+  margin-top: 30px;
+  color: rgb(206, 255, 28);
+  /* color: greenyellow; */
+}
+
+.container {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-1,
+.box-3 {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 400px;
+  border-radius: 25px;
+}
+
+.rock {
+  background: url(../images/rock.png) center/cover no-repeat;
+}
+.paper {
+  background: url(../images/paper.png) center/cover no-repeat;
+}
+.scissors {
+  background: url(../images/scissors.png) center/cover no-repeat;
+}
+
+.user-btn button {
+  margin-top: 30px;
+  margin-right: 10px;
+  background-color: white;
+  border: white;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+.user-btn button:hover {
+  background-color: rgba(163, 162, 162, 0.664);
+  height: 90px;
+  width: 90px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.computer img {
+  margin-top: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+#startBtn {
+  padding: 20px;
+  width: 10rem;
+  border-radius: 35px;
+  border: none;
+  font-family: "IM Fell Double Pica", serif;
+}
+#startBtn:hover {
+  cursor: pointer;
+  background-color: rgba(184, 184, 184, 0.979);
+  width: 11rem;
+  height: 70px;
+}
+
+.credit {
+  margin-top: 30px;
+}
+.credit:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  color: rgba(221, 36, 36, 0.884);
+}
+
+@media screen and (max-width: 830px) {
+  .user-btn button {
+    height: 50px;
+    width: 50px;
+  }
+  .user-btn button:hover {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .title h1 {
+    font-size: 2.5rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .box {
+    margin: 10px;
+  }
+  .box-1,
+  .box-3 {
+    height: 20vh;
+    width: 250px;
+  }
+  #startBtn {
+    padding: 5px;
+    height: 50px;
+  }
+  #startBtn:hover{
+    height: 56px;
+  }
+  .credit {
+    margin-top: 20px;
+  }
+  .computer img {
+    height: 40px;
+    width: 40px;
+  }
+}

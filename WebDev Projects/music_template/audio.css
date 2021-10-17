@@ -1,0 +1,34 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background:linear-gradient(45deg,#e91e63,#fffde7);
+}
+.player{
+	position:relative;
+	width:350px;
+	background:#f3f4f5;
+}
+.player .imgbx{
+	position:relative;
+	width:100%;
+	height:350px;
+}
+.imgbx img{
+	position:absolute;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+audio{
+	width:100%;
+	outline:none;
+}
+	
+	

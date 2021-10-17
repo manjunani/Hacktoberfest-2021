@@ -1,0 +1,91 @@
+
+<html>
+    <HEAD>
+        <title>tetris</title>
+        <link rel="stylesheet" href="styles.css">
+    </HEAD>
+    <body>
+        <div id="centerbox">
+            <TABLE cellspacing="0" cellpadding="0" width="100%" height="68%"><TBODY><TR><TD valign="middle">
+            
+                <DIV id="tetris">
+                    <DIV class="left">
+                        <H1>Tetris Game</H1>
+                        <DIV class="menu">
+                            <DIV><INPUT type="button" value="New Game" id="tetris-menu-start"></DIV>
+                            <DIV><INPUT type="button" value="Reset" id="tetris-menu-reset"></DIV>
+                            <DIV><INPUT type="button" value="Help" id="tetris-menu-help"></DIV>
+                            <DIV><INPUT type="button" value="Highscores" id="tetris-menu-highscores"></DIV>
+                        </DIV>
+                        <DIV class="keyboard">
+                            <DIV class="up"><INPUT type="button" value="^" id="tetris-keyboard-up"></DIV>
+                            <DIV class="down"><INPUT type="button" value="v" id="tetris-keyboard-down"></DIV>
+                            <DIV class="left"><INPUT type="button" value="&lt;" id="tetris-keyboard-left"></DIV>
+                            <DIV class="right"><INPUT type="button" value="&gt;" id="tetris-keyboard-right"></DIV>
+                        </DIV>
+                        <DIV id="tetris-nextpuzzle" style="display: none; "></DIV>
+                        <DIV id="tetris-gameover" style="display: none; ">Game Over</DIV>
+                        <DIV class="stats">
+                            <TABLE cellspacing="0" cellpadding="0">
+                            <TBODY><TR>
+                                <TD class="level">Level:</TD>
+                                <TD><SPAN id="tetris-stats-level">1</SPAN></TD>
+                            </TR>
+                            <TR>
+                                <TD class="score">Score:</TD>
+                                <TD><SPAN id="tetris-stats-score">0</SPAN></TD>
+                            </TR>
+                            <TR>
+                                <TD class="lines">Lines:</TD>
+                                <TD><SPAN id="tetris-stats-lines">0</SPAN></TD>
+                            </TR>
+                            <TR>
+                                <TD class="apm">APM:</TD>
+                                <TD><SPAN id="tetris-stats-apm">0</SPAN></TD>
+                            </TR>
+                            <TR>
+                                <TD class="time">Time:</TD>
+                                <TD><SPAN id="tetris-stats-time">0</SPAN></TD>
+                            </TR>
+                            
+                            </TBODY></TABLE>
+                        </DIV>
+                    </DIV>
+                    <DIV id="tetris-area"></DIV>
+                    <DIV id="tetris-help" class="window" style="display: none; ">
+                        <DIV class="top">
+                            Help <SPAN id="tetris-help-close" class="close">x</SPAN>
+                        </DIV>
+                        <DIV class="content">
+                            <B>Controllers:</B> <BR>
+                            up - rotate <BR>
+                            down - move down <BR>
+                            left - move left <BR>
+                            right - move right <BR>
+                            space - fall to the bottom <BR>
+                            n - new game <BR>
+                            r - reset <BR>
+                            <BR>
+                            <B>Rules:</B> <BR>
+                            1) Puzzle speed = 80+700/level miliseconds, the smaller value the faster puzzle falls <BR>
+                            2) If puzzles created in current level &gt;= 10+level*2 then increase level <BR>
+                            3) After puzzle falling score is increased by 1000*level*linesRemoved <BR>
+                            4) Each "down" action increases score by 5+level (pressing space counts as multiple down actions)
+                        </DIV>
+                    </DIV>
+                    <DIV id="tetris-highscores" class="window" style="display: none; ">
+                        <DIV class="top">
+                            Highscores <SPAN id="tetris-highscores-close" class="close">x</SPAN>
+                        </DIV>
+                        <DIV class="content">
+                            <DIV id="tetris-highscores-content"></DIV>
+                            <BR>
+                            Note: these scores are kept in cookies, they are only visible to your computer, other players that visit this page see their own scores.
+                        </DIV>
+                    </DIV>
+                </DIV>  
+                </TD></TR></TBODY></TABLE>
+            </div>
+            <script src="tetris.js"></script>
+    </body>
+</html>

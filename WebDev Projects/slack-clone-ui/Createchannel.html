@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Slack Redesign</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <!-- Header and navigation -->
+        <header class="header">
+          <nav class="nav">
+            <div class="icons">
+              <a href="#"><i class="fas fa-arrow-left"></i></a>
+              <a href="#" class="grey"><i class="fas fa-arrow-right"></i></a>
+              <a href="#"><i class="far fa-clock"></i></a>
+            </div>
+            <form action="." class="search-bar">
+              <i class="fas fa-search"></i>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search Slack"
+                class="search-bar-input"
+              />
+            </form>
+  
+            <div class="move-left">
+              <a href="#"><i class="far fa-question-circle"></i></a>
+            </div>
+          </nav>
+        </header>
+        <!-- End of header and navigation -->
+        <main class="main">
+          <section class="sidebar">
+            <article class="sidebar-2">
+              <section class="sidebar-user">
+                <div class="sidebar-user-info">
+                  <h4>ComeChat(e)</h4>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <p class="sidebar-user-info-additional">
+                  <i class="fas fa-circle"></i>Vikrant
+                </p>
+                <span class="user-edit-icon"><i class="fas fa-edit"></i></span>
+              </section>
+              <section class="unread">
+                <ul>
+                  <li>
+                    <a href="#"><i class="far fa-comment-dots"></i>Threads</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-at"></i>Mentions & reactions</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-arrow-down"></i>More</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="channels" style="padding: 10px;">
+                <h4 class="channels-header">
+                  <i class="fas fa-sort-down"></i> Channels
+                </h4>
+              </section>
+              <section class="channels" style="padding: 10px;">
+                  <h4 class="channels-header">
+                    <i class="fas fa-sort-down"></i> Add Channels
+                  </h4>
+                </section>
+              <section class="direct-messages unread" style="padding: 10px;">
+                <h4 class="direct-messages-header">
+                  <i class="fas fa-sort-down"></i> Direct Messages
+                </h4>
+              </section>
+              <section class="direct-message" >
+                </section>
+            </article>
+          </section>
+          <section class="body">
+            <img class="control"src="./images/a5f40654-b714-4ce6-97d2-46b2915c579f.png" alt=" "/>
+            <form action="." class="create-form">
+              <h3 class="form-header">Add a new Channel</h3>
+              <fieldset>
+                <div class="form-group">
+                  <div class="form-group-control">
+                    <input
+                      type="text"
+                      placeholder="Channel name"
+                      id="channel-name"
+                      name="channel-name"
+                      class="form-control prepend"
+                      maxlength="80"
+                      required
+                    />
+                   <!--<i class="fas fa-hashtag prepend-icon"></i>
+                    <span class="number">80</span>--> 
+                  </div>
+                </div>
+    
+                <div class="form-group">
+                  <select name="cars" class="form-control" id="cars">
+                    <option value="volvo">Private</option>
+                    <option value="saab">Public</option>
+                  </select>
+                </div>
+              </fieldset>
+            </form>
+              <a href="./channel.html"><button>Create Channel</button></a>
+                </section>
+              </div>
+        </div>
+      
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+body {
+  animation: lights 2s ease infinite alternate;
+}
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 95vh;
+}
+
+.actions {
+  margin: auto;
+}
+button {
+  width: fit-content;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(7, 4, 51);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid wheat;
+}
+.bot-status {
+  margin-top: 5px;
+}
+.bot {
+  width: fit-content;
+  margin: auto;
+}
+.bot-gravity-on {
+  animation: gravity 5s ease infinite alternate;
+}
+
+@keyframes gravity {
+  0% {
+    margin-bottom: 20px;
+    transform: rotate(-90deg);
+  }
+  25% {
+    margin-bottom: 20px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-bottom: 30px;
+    rotate: rotate(60deg);
+  }
+  75% {
+    rotate: rotate3d(90deg);
+  }
+  100% {
+    margin-bottom: 50px;
+    rotate: rotate(240deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sections {
+    grid-template-columns: 1fr;
+  }
+  @keyframes moves {
+    0% {
+      margin-left: 0%;
+    }
+    100% {
+      margin-left: 40%;
+    }
+  }
+}
+.beep,
+.torso,
+.brain,
+.foot {
+  margin: 0 auto;
+}
+
+.bot-status-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.bot-offline {
+  background-color: red;
+}
+.bot-online {
+  background-color: rgb(52, 196, 60);
+}
+.bot-message {
+  margin-left: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 2px;
+  display: none;
+}
+.bot-moves {
+  width: fit-content;
+  animation: moves 2s ease infinite alternate;
+}
+
+@keyframes moves {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 50%;
+  }
+}
+@keyframes lights {
+  0% {
+    background: rgb(233, 97, 97);
+  }
+  100% {
+    background-color: rgb(150, 235, 235);
+  }
+}
+.beep {
+  width: 5px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-bottom: 8vh solid rgb(22, 20, 36);
+  border-top: 1vh solid rgb(33, 29, 53);
+  background: transparent;
+}
+.brain {
+  height: 15vh;
+  width: 15vh;
+  border-bottom: 4vh solid rgb(33, 29, 53);
+  border-radius: 6vh 6vh 1vh 1vh;
+  background: radial-gradient(circle, rgb(159, 50, 248) 15%, transparent 40%),
+    rgb(37, 151, 218);
+  background-size: 50% 100%;
+}
+.torso {
+  height: 0;
+  width: 14vh;
+  border-top: 30vh solid rgb(37, 151, 218);
+  background-size: 50% 100%;
+  border-left: 7.5vh solid transparent;
+  border-right: 7.5vh solid transparent;
+  border-radius: 2vh 2vh 10vh 10vh;
+  background: transparent;
+}
+.foot {
+  height: 4vh;
+  width: 4vh;
+  background: rgb(33, 29, 53);
+  border-radius: 4vh;
+  border: 15px solid rgb(22, 20, 36);
+}
+.ground {
+  width: 90%;
+  margin: auto;
+  background-color: black;
+  height: 10px;
+}
