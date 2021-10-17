@@ -40,8 +40,9 @@ After adding the files here kindly **update the readme.md file** in the below ta
 |n0GuessGame.py | it's a number guessing game |
 |1st_PYGAME(Worm.io).py | It's a worm game with audio |
 |BlowfishAlgo.py | Python program for implementing Blowfish Encryption-Decryption Algorithm |
+| Numpy Methods.ipynb | This notebook contains the detailed code explaination of Numpy methods from basic to intermediate level |
+| Matplotlib Methods.ipynb | This notebook contains the detailed code explaination of Matplotlib methods from basic to intermediate level |
 |Youtube_Video_Download.py | Python program for downloding a youtube videofrom a given link |
 |snails.py | Python game to race two "snails" and compete among two players |
-
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
