@@ -1,0 +1,50 @@
+* {
+    font-family: "Rimouski";
+    font-size: 1rem;
+}
+
+body {
+    margin-top: 100px;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://source.unsplash.com/collection/2411320/1600x900');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -2;
+}
+i {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.84);
+    padding: 20px;
+}
+.card-header {
+    margin-top: 5px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.card-header span {
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#quote {
+    color: rgb(20, 18, 20);
+    font-size: 2rem;
+    letter-spacing:4px;
+}
+
+.fa-redo-alt {
+    color: rgba(255, 2, 179, 0.932);
+}
+
+.quote-container {
+    opacity: 0.8;
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}

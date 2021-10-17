@@ -1,0 +1,15 @@
+print("Hi")
+print("Let's find out your outdoor personality!")
+color = input("what is your favorite color: green or blue?")
+if color == "green"
+  forest = input("do you like the forest? yes or no")
+  if forest == "yes"
+    print("I knew it!)
+  else
+    print("ok")
+ if color == "blue"
+          ocean = input("do you like the ocean? yes or no")
+          if ocean == "yes"
+            print("I knew it!)
+                  else
+                    print("ok")
