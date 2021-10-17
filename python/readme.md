@@ -44,5 +44,6 @@ After adding the files here kindly **update the readme.md file** in the below ta
 | Matplotlib Methods.ipynb | This notebook contains the detailed code explaination of Matplotlib methods from basic to intermediate level |
 |Youtube_Video_Download.py | Python program for downloding a youtube videofrom a given link |
 |snails.py | Python game to race two "snails" and compete among two players |
+|PrimeFactors.py | A Python Script to compute prime factors of an integer |
 
 **Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**
