@@ -1,0 +1,490 @@
+ 
+//LINKED LIST helper codes by Deepak Kumar
+
+#include<bits/stdc++.h>
+using namespace std;
+
+struct node
+{
+	int data;
+	struct node *next;
+}*first = NULL;
+
+
+
+void create(int A[], int n)			//creation of linked list 
+{
+	
+	struct node *t,*last;
+	first = new node;
+	first->data = A[0];
+	first->next = NULL;
+	last = first;
+	
+	for(int i=1;i<n;i++){
+		
+		t=new node;
+		t->data=A[i];
+		t->next=NULL;
+		last=t;
+	}
+}
+
+void Display(struct node *p)			//Display of linked list 
+{
+	while(p!=NULL)
+	{
+		cout<<p->data;
+		p=p->next;
+	}
+}
+
+void RDisplay(struct node *p)			//Recursive Display of linked list 
+{
+	if(p!=NULL)
+	{
+		RDisplay(p->data);
+		cout<<p->data;
+	}
+}
+
+int Max(struct node *p)				//Maximum element in a linked list
+{
+	int max=INT_MIN;
+	while(p)
+	{
+		if(p->data > max)
+		max = p->data;
+		
+		p = p->next;
+	}
+	
+	return max;
+}
+
+int RMax(struct node *p)				//(Recursive) Maximum element in a linked list
+{
+	int x=0;
+	if(p==0) return INT_MIN;
+	x=RMax(p->next);
+	x > p->data ? return x : return p->data;
+}
+
+struct node *Lsearch(struct node *p, int key)		// Searching in a linked list
+{
+	struct node *q;
+	while(p!=NULL)
+	{
+		if(key == p->data)
+		{
+			q->next = p->next;
+			p->next = first;
+			first = p;
+			return p;
+		}
+		q=p;
+		p=p->next;
+	}
+	return NULL;
+}
+
+struct node *RLsearch(struct node *p, int key)		// (recursive)Searching in a linked list
+{
+	if(p==NULL) return NULL;
+	if(key == p->data) return p;
+	return RLsearch(p->next,key);
+}
+
+void insert(struct node *p, int index, int x)		//insertion in a linked list
+{
+	struct node *t;
+	if(index < 0 || index > count(p)) return;
+	t=new node;
+	t->data = x;
+	if(index == 0)
+	{
+		t->next = first;
+		first = t;
+	}
+	else 
+	{
+		for(int i=0;i<index-1;i++)
+		p=p->next;
+		t->next=p->next;
+		p->next=t;
+	}
+}
+
+void sortedInsert(struct node *p, int x)		//sorted insertion in a linked list
+{
+	struct node *t,*q=NULL;
+	t=new node;
+	t->data=x;
+	t->next=NULL;
+	if(first == NULL) first = t;
+	else
+	{
+		while(p && p-> data<x)
+		{
+			q=p;
+			p=p->next;
+		}
+		if(p==first) 
+		{
+			t->next=first;
+			first=t;
+		}
+		else 
+		{
+			t->next=q->next;
+			q->next=t;
+		}
+	}
+}
+
+int Delete(struct node *p, int index)			//Deleting a node in a linked list
+{
+	struct node *q=NULL;
+	int x = -1;
+	if(index < 0 || index > count(p)) return -1;
+	if(index == 1)
+	{
+		q=first;
+		x=first->data;
+		first=first->data;
+		delete p;
+		return x;
+	}
+	else 
+	{
+		for(int i=0;i<index-1;i++)
+		{
+			q=p;
+			p=p->next;
+		}
+		q->next=p->next;
+		x=p->data;
+		delete p;
+		return x;
+	}
+}
+
+int isSorted(struct node *p)					//to check whether a linked list is sorted or not
+{
+	int x=INT_MIN;
+	while(p)
+	{
+		if(p->data < x) return 0;
+		x=p->data;
+		p=p->next;
+	}
+	return 1;
+}
+
+void RemoveDuplicate(struct node *p)				//to remove duplicate elements from a linked list
+{
+	struct node *q=p->next;
+	while(q!=NULL)
+	{
+		if(p->data!=q->data)
+		{
+			p=q;
+			q=q->next;
+		}
+		else 
+		{
+			p->next=q->next;
+			delete q;
+			q=q->next;
+		}
+	}
+}
+
+void Reverse1(struct node *p)					//Reversing linked list (method 1)
+{
+	int *A,i=0;
+	struct node *q=p;
+	A=(int *)malloc(sizeof(int)*count(p));
+	while(q!=NULL)
+	{
+		A[i]=q->data;
+		q=q->next;
+		i++;
+	}
+	q=p;
+	i--;
+	while(q!=NULL)
+	{
+		q->data=A[i];
+		q=q->next;
+		i--;
+	}
+}
+
+void Reverse2(struct node *p)					//Reversing linked list (method 2)
+{
+	struct node *q=NULL,*r=NULL;
+	while(p!=NULL)
+	{
+		r=q;
+		q=p;
+		p=p->next;
+		q->next=r;
+	}
+	first=q;
+}
+
+void Reverse3(struct node *q,struct node *p)			//Reversing linked list (method 3)
+{
+	if(p)
+	{
+		Reverse3(p,p->next);
+		p->next=q;
+	}
+	else first = q;
+}
+
+void Merge(struct node *p,struct node *q)			//Merging linked list 
+{
+	struct node *last;
+	if(p->data < q->data)
+	{
+		third = last =p;
+		p=p->next;
+		third->next=NULL;
+	}
+	else
+	{
+		third = last =q;
+		q=q->next;
+		third->next=NULL;
+	}
+	while(p && q)
+	{
+		if(p->data < q->data)
+		{
+			last->next=p;
+			last =p;
+			p=p->next;
+			last->next=NULL;
+		}
+		else
+		{
+			last->next=q;
+			last =q;
+			q=q->next;
+			last->next=NULL;
+		}
+		
+	}
+	if(p) last->next=p;
+	if(q) last->next=q;
+}
+
+
+int isLoop(struct node *f)
+{
+	struct node *p,*q;
+	p=q=f;
+	do
+	{
+		p=p->next;
+		q=q->next;
+		q=q?q->next:q;
+	}
+	while(p && q && p!=q);
+	p==q ? return 1 : return 0;
+}
+
+int main()
+{
+
+		// Statements
+
+}
+   					//FINDING MIDDLE ELEMENT IN A LINEAR LINKED LIST
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class node
+{
+	public:
+	int data;
+	node *next;
+};
+
+node *head = new node;
+
+void create(int A[], int n)
+{
+	node *temp;
+	node *tail;
+	head->data = A[0];
+	head->next = nullptr;
+	tail = head;
+	for(int i=1;i<n;i++)
+	{
+		temp = new node;
+		temp->data = A[i];
+		temp->next = nullptr;
+		tail->next = temp;
+		tail = temp;
+	}
+}
+
+void middleNode1(node *p)
+{
+	int length = 0;
+	while(p)
+	{
+		length++;
+		p=p->next;
+	}
+	int index = (int)ceil(length/2.0);
+	node *q = head;
+	for(int i=0;i<index-1;i++)
+	{
+		q=q->next;
+	}
+	cout<<"Middle Element(Method 1)" <<q->data<<endl;
+}
+
+void middleNode2(node *p)
+{
+	node *q=p;
+	while(p)
+	{
+		q=q->next;
+		if(q) q=q->next;
+		if(q) p=p->next;
+	}
+	cout<<"Middle Element(Method 2)" <<p->data<<endl;
+}
+
+void middleNode3(node *p)
+{
+	stack<node*> s;
+	while(p)
+	{
+		s.push(p);
+		p=p->next;
+	}
+	int length = s.size();
+	int poplength = (int)floor(length/2.0);
+	while(poplength)
+	{
+		s.pop();
+		poplength--;
+	}
+	cout<<"Middle Element(Method 3)" <<s.top()->data<<endl;
+}
+
+int main()
+{
+	int A[] = {1,3,5,7,9,11,13,15,17,19,21};
+	create(A, sizeof(A)/sizeof(A[0]));
+	middleNode1(head);
+	middleNode2(head);
+	middleNode3(head);
+
+}
+   	
+   					//FINDING INTERSECTING POINT OF TWO LINEAR LINKED LIST
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Node{
+public:
+    int data;
+    Node* next;
+};
+ 
+Node* head = new Node;
+Node* second = new Node;
+ 
+void create(int A[], int n){
+    Node* temp;
+    Node* tail;
+ 
+    head->data = A[0];
+    head->next = nullptr;
+    tail = head;
+ 
+    for (int i=1; i<n; i++){
+        temp = new Node;
+        temp->data = A[i];
+        temp->next = nullptr;
+        tail->next = temp;
+        tail = temp;
+    }
+}
+ 
+void createSecond(int A[], int n, Node* p){
+    Node* temp;
+    Node* tail;
+ 
+    second->data = A[0];
+    second->next = nullptr;
+    tail = second;
+ 
+    for (int i=1; i<n; i++){
+        temp = new Node;
+        temp->data = A[i];
+        temp->next = nullptr;
+        tail->next = temp;
+        tail = temp;
+    }
+    tail->next = p;
+}
+ 
+void Intersection(Node* p, Node* q){
+   									 // Populate first stack
+    stack<Node*> stk1;
+    while (p != nullptr){
+        stk1.push(p);
+        p = p->next;
+    }
+ 
+    									// Populate second stack
+    stack<Node*> stk2;
+    while (q != nullptr){
+        stk2.push(q);
+        q = q->next;
+    }
+ 
+    Node* r;
+    while (stk1.top() == stk2.top()){
+        r = stk1.top();
+        stk1.pop();
+        stk2.pop();
+    }
+    cout << "Intersecting Node: " << r->data << endl;
+}
+ 
+ 
+int main() {
+ 
+    									// Create First Linked List
+    int A[] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21};
+    create(A, sizeof(A)/sizeof(A[0]));
+ 
+    									// Create Second Linked List
+    Node* temp = head;
+    int i = 5;
+    while (i>0){
+        temp = temp->next;
+        i--;
+    }
+    cout << temp->data << endl;
+ 
+    int B[] = {2, 4, 6, 8, 10};
+    createSecond(B, sizeof(B)/sizeof(B[0]), temp);
+ 
+    									// Find Intersection
+    Intersection(head, second);
+ 
+ 
+    return 0;
+}
