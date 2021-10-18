@@ -1,0 +1,232 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+/******************* NavBar *****************/
+.navbar img 
+{
+	height: 150px;
+	width: 150px;
+	float: left;
+	border: 10px solid #80FF00;
+	border-radius: 50%;
+}
+.navBar
+{
+	padding-top: 20px;
+  	background-color: #298A08;
+  	height: 100px;
+}
+.navBar ul 
+{
+	margin-top: 10px;
+	margin-right: 60px;
+	float: right;
+}
+.navBar ul li
+{
+	display: inline-block;
+	color: #fff;
+  	list-style-type: none;
+  	font-size: 30px;
+  	margin-left: 30px;
+  	margin-right: 30px;
+  	border-right: 2px solid #fff;
+  	border-left: 2px solid #fff;
+  	padding-right: 20px;
+  	padding-left: 20px;
+  	margin-top: 10px;
+}
+.navBar ul li:hover
+{
+	color: #000;
+	transition: 1s;
+	border-color: #000;
+}
+/******************** Header ************************/
+.header
+{
+	padding: 100px;
+	background-image: url(img/Back.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.detalis
+{
+	background-color: rgb(0,0,0,0.6);
+	border-radius: 20px;
+	padding: 50px;
+}
+.header h1
+{
+	font-size: 65px;
+	font-family:  Gabriola;
+	color: #fff;
+	text-align: center;
+	padding-top: 30px;
+	text-shadow: 2px 2px 4px #000;
+}
+.header p
+{
+	font-size: 35px;
+	font-family:  Gabriola;
+	color: #fff;
+	text-align: center;
+	padding-top: 30px;
+	text-shadow: 2px 2px 4px #000;	
+}
+.header button
+{
+	width: 100px;
+	padding: 8px 0;
+	outline: none!important;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	background: transparent;
+	color: #fff;
+	margin-top: 40px;
+	font-size: 30px;
+	font-family: Footlight MT Light;
+	margin-left: 520px;
+	margin-bottom: 5px;
+}
+.header button:hover
+{
+	cursor: pointer;
+}
+/********************* Body **************************/
+.body
+{
+	background-color: #BEF781;
+	padding: 100px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.body video:controls
+{
+	background: transparent;
+}
+.body video
+{
+	height: 340px;
+	width: 600px;
+	border-radius: 20px;
+	border-style: none;
+	border: 10px solid #fff;
+	border-radius: 20px;
+	margin-left: 250px;
+}
+.body h1
+{
+	font-size: 55px;
+	font-family:  Gabriola;
+	color: #000;
+	padding-top: 30px;	
+}
+.body ol
+{
+	margin-left: 300px;
+}
+.body h4
+{
+	font-size: 35px;
+	font-family:  Gabriola;
+	color: #000;
+	padding-top: 30px;	
+}
+.body p
+{
+	font-size: 35px;
+	font-family:  Gabriola;
+	color: #000;
+	padding-top: 30px;	
+}
+.body button
+{
+	width: 350px;
+	padding: 8px 0;
+	outline: none!important;
+	border: 2px solid #000;
+	border-radius: 50px;
+	background: transparent;
+	color: #000;
+	margin-top: 40px;
+	font-size: 30px;
+	font-family: Footlight MT Light;
+	margin-left: 320px;
+	margin-bottom: 5px;	
+}
+.body button
+{
+	cursor: pointer;
+}
+/******************** Contact **********************/
+#contact
+{
+	padding: 100px;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/BG.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#contact h1
+{
+	font-size: 55px;
+	font-family:  Gabriola;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	padding-top: 30px;
+	text-align: center;
+}
+#contact h1::after
+{
+ content: '';
+ background: #fff;
+ display: block;
+ height: 3px;
+ width: 100px;
+ margin: 5px auto 5px;
+}
+#contact h2
+{
+	font-size: 30px;
+	font-family:  Gabriola;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	padding-top: 30px;
+	text-align: center;
+}
+#contact h4
+{
+	font-size: 35px;
+	font-family:  Gabriola;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	padding-top: 30px;
+	text-align: center;
+}
+#contact p
+{
+	font-size: 25px;
+	font-family:  Gabriola;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	padding-top: 30px;
+	text-align: center;
+}
+/******************** Footer ************************/
+#footer
+{
+	background-color: #0B3B0B;
+	height: 100px;
+}
+#footer p
+{
+	font-size: 25px;
+	font-family:  Gabriola;
+	color: #fff;
+	text-align: center;
+	padding-top: 30px;
+}
