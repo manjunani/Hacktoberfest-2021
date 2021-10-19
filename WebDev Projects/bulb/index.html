@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+			}
+			.container {
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #19284d;
+			}
+			.container-on {
+				background: radial-gradient(circle, rgba(182, 184, 150, 1) 0%, rgba(25, 40, 77, 1) 100%);
+			}
+			.box {
+				text-align: center;
+			}
+			.box img {
+				height: 200px;
+				margin: 1rem auto;
+			}
+			.btn {
+				background-color: orange;
+				padding: 8px;
+				font-size: 1.1rem;
+				margin: 0 8rem;
+			}
+			h1 {
+				color: #f1c40f;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">
+				<h1>Can you turn on the light 💡?</h1>
+				<img class="bulb" src="bulboff.png" alt="" />\
+				<div class="btn-div">
+					<button class="btn" onclick="bulboff()">Turn off</button>
+					<button class="btn" onclick="bulbon()">Turn on</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			const container = document.querySelector(".container");
+			const bulb = document.querySelector(".bulb");
+			function bulboff() {
+				bulb.setAttribute("src", "bulboff.png");
+				container.classList.remove("container-on");
+			}
+			function bulbon() {
+				bulb.setAttribute("src", "bulbon.png");
+				container.classList.add("container-on");
+			}
+		</script>
+	</body>
+</html>

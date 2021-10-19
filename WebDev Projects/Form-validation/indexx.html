@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Your Information</title>
+    
+  </head>
+  <body>
+    
+    <hr>
+    <h1 style="text-align: center;top: 0%;">Your Information</h1> 
+    <hr>
+    <hr>
+    <form style="margin-left: 17%; margin-right: auto; display: inline-block;width: 65%; margin-top: 2%; ">
+        <dic class="forms">
+ 
+        <div class="form-group" style="padding-bottom:3%;">
+          <label for="name">Username</label>
+          <input type="text" class="form-control"  id="name" placeholder="Enter your username">
+       <small id="namefeedback" class="form-text text-muted invalid-feedback">Enter correct username</small>
+        </div> 
+
+        <!-- email -->
+        <div class="form-group" style="padding-bottom:3%;">
+          <label for="Email">Email address</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter your email">
+          <small id="namefeedback" class="form-text text-muted invalid-feedback">Enter correct email</small>
+        </div> 
+
+        <!-- Interest -->
+        <div  class="form-group"style="padding-bottom:3%;">
+          <label for="cars">Select your Interest</label>
+          <select class="form-control" id="interest">
+            <option>Web Dev</option>
+            <option>Cloud Computing</option>
+            <option>Android Dev</option>
+            <option>Machine Learning</option>
+           
+          </select>
+        </div>
+        <!-- contact number-->
+        <div class="form-group"style="padding-bottom:3%;">
+          <label for="number">Enter your contact number</label>
+          <input class="form-control" id="number" rows="1"></textarea>
+          <small id="namefeedback" class="form-text text-muted invalid-feedback">Enter 11 digit number</small>
+        </div>
+        <!--address-->
+        <div class="form-group">
+          <label for="address">Enter your address</label>
+          <textarea class="form-control" id="address" rows="3"></textarea>
+        </div>
+    </div>
+    
+   <!--  button -->
+    <button id="submit" class="btn btn-primary" style="margin-top: 2%;">Submit</button>
+      </form>
+<script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body> 
+</html>

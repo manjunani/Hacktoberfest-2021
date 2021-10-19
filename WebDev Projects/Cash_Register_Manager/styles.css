@@ -1,0 +1,139 @@
+body {
+  text-align: center;
+  margin: auto;
+  background-color: #f1d18a;
+  min-height: 100vh;
+}
+.section-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.amount-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+table {
+  text-align: center;
+  margin: auto;
+  border: 3px;
+}
+table {
+  margin: 1rem auto;
+  font-size: x-large;
+  font-weight: 500;
+  border-collapse: collapse;
+  background-color: #ececec;
+}
+
+th {
+  border: 2px solid black;
+  width: 0%;
+  padding: 0.4rem;
+}
+
+td {
+  border: 2px solid black;
+  width: 0%;
+  padding: 0.4rem;
+}
+h1 {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: auto;
+  background-color: #e7475e;
+  border-bottom-color: #9f1e49;
+}
+.para {
+  font-size: 1.8rem;
+  width: 50%;
+  text-align: center;
+  margin: 2rem auto;
+}
+h2 {
+  border-color: #f7f7f7;
+  text-align: center;
+  margin: auto;
+  background-color: #232931;
+  color: white;
+  align-self: center;
+  padding: 1rem 5rem;
+  border:2px solid #fff;
+}
+.return-change {
+  border-color: #f7f7f7;
+  text-align: center;
+  margin: auto;
+  background-color: #586e72;
+  color: white;
+  align-self: center;
+  padding: 1rem 5rem;
+}
+
+input {
+  margin: 1rem auto;
+  height: 3rem;
+  width: 12rem;
+  display: block;
+  border-color: #232931;
+  font-size: 1rem;
+  text-align: center;
+}
+#check-btn {
+  margin: auto;
+  background-color: #24bddf;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border-color: blue;
+}
+#error-msg {
+  font-size: 1.5rem;
+}
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+  font-size: 1.5rem;
+  color: black;
+  font-family: cursive;
+  font-style: italic;
+}
+
+
+@media screen and (max-width: 700px) {
+  h1
+  {
+    font-size: 2rem;
+  }
+  .para
+  {
+    font-size: 1.2rem;
+  }
+  .section-main
+  {
+    display: block;
+  }
+  .amount-div
+  {
+    grid-template-columns: 1fr;
+  }
+  h2
+  {
+    display: inline-block;
+  }
+  footer p{
+    font-size:1rem;
+    padding-top: 10px;
+  }
+}

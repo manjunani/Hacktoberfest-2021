@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/e09f1291e7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Pacifico&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/fav.ico" />
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="" width="80" height="80" class="d-inline-block align-text-top" />
+        Tic Tac Toe
+      </a>
+    </div>
+  </nav>
+  <div id="startPage">
+    <p class="h1 text-info info">Number of players</p>
+    <div class="btn-group1" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btn-grp1" id="onePlayer" autocomplete="off" checked />
+      <label class="btn btn-outline-primary btn-lg" for="onePlayer">
+        <h2 id="btn1">1 player</h2>
+      </label>
+
+      <input type="radio" class="btn-check" name="btn-grp1" id="twoPlayers" autocomplete="off" />
+      <label class="btn btn-outline-primary" for="twoPlayers">
+        <h2>2 players</h2>
+      </label>
+    </div>
+    <p class="h1 text-info info">What do you want to take?</p>
+    <div class="btn-group2" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btn-grp2" id="X" autocomplete="off" checked />
+      <label class="btn btn-outline-primary" for="X">
+        <h2>X</h2>
+      </label>
+
+      <input type="radio" class="btn-check" name="btn-grp2" id="O" autocomplete="off" />
+      <label class="btn btn-outline-primary" for="O">
+        <h2>O</h2>
+      </label>
+    </div>
+    <button class="btn btn-lg btn-success" onclick="startGame()">
+      START
+    </button>
+  </div>
+  <div id="whoStarts">
+    <p class="h1 text-info info">Who will start first?</p>
+    <div class="btn-group3" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btn-grp3" id="Me" autocomplete="off" checked />
+      <label class="btn btn-outline-primary btn-lg" for="Me">
+        <h2 id="btn1">Me</h2>
+      </label>
+
+      <input type="radio" class="btn-check" name="btn-grp3" id="Computer" autocomplete="off" />
+      <label class="btn btn-outline-primary" for="Computer">
+        <h2>Computer</h2>
+      </label>
+    </div>
+    <button class="btn btn-lg btn-success" onclick="startSinglePlayer()">
+      START
+    </button>
+  </div>
+  <div class="container-fluid" id="table-container">
+    <table>
+      <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="endgame">
+    <div class="text">START</div>
+  </div>
+  <div class="end" id="endPage">
+    <div class="conatiner-fluid" id="winMessage"></div>
+    <button class="btn btn-lg btn-success" id="restartBtn" onclick="home()">
+      <h2>PLAY AGAIN</h2>
+    </button>
+    <!-- <br><button class="btn btn-lg btn-primary" id="homeBtn" onclick="home()"><h2>HOME</h2></button> -->
+  </div>
+  <div class="bottom-container" id="contact-page">
+    <div class="made-by">
+      <p class="made-by">MADE WITH 💗 BY DANISH</p>
+    </div>
+    <a class="footer-link" href="https://www.linkedin.com/in/Danish306/"><i class="fab fa-linkedin fa-lg"></i>
+      LinkedIn</a>
+    <a class="footer-link" href="https://github.com/try-catch-stack"><i class="fab fa-github-square fa-lg"></i>
+      Github</a>
+    <p class="copyright">
+      © <span id="copyright-year"></span> Danish Ahmed Mirza
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

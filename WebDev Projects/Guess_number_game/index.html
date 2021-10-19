@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME</title>
+    <link rel="stylesheet" href="dom.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- modal-home to go to game when clicked play -->
+      <div class="home game" id="modal-home">
+        <div class="header">
+          <h1>How To Play?</h1>
+        </div>
+        <div class="rules">
+          <ol>
+            <li>You have to Guess Number between 1 and 10</li>
+            <li>You have 5 chances to WIN!</li>
+            <li>Press Play button to START!!</li>
+          </ol>
+        </div>
+        <button class="play btn">Play</button>
+      </div>
+
+      <!-- actual game goes here -->
+      <div class="game">
+        <div class="title">GUESS THE NUMBER ??</div>
+        <hr />
+        <!-- modal for displaying result -->
+        <div class="result" id="modal-result">
+          <div class="message" id="msg">!!RESULT!!</div>
+        </div>
+        <div class="chance">
+          <h4>Chance Left :</h4>
+          <span class="score"></span>
+        </div>
+        <div class="userInput" id="number">
+          <input type="text" placeholder="Enter Here" id="data" />
+          <button class="btn" type="submit" id="checkBtn">Check</button>
+          <button type="reset" class="btn btn-replay" id="replay">
+            Replay
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- script goes here -->
+    <script src="dom.js"></script>
+  </body>
+</html>

@@ -1,14 +1,16 @@
-Hi There,
+Hi there,
 
-This folder is for the Pet Projects/ Useful codes etc.,
-Kindly update the QUALITY Code
+Add the files in the readme in the below format
 
-after adding the files here kindly **update the readme.md file** in the below table
+| Filename       | Description                                       |
+| -------------- | ------------------------------------------------- |
+| [Electricity Bill Generator](https://github.com/manjunani/HacktoberFest_2021/blob/main/javascript/Electricity%20Bill%20Generator) | Create Electricity Bill Generator  |
+| [IsTheDateToday.js](https://github.com/manjunani/HacktoberFest_2021/blob/main/javascript/IsTheDateToday.js) | Create IsTheDateToday.js|
+| [WhatsUpNext.js](https://github.com/manjunani/HacktoberFest_2021/blob/main/javascript/WhatsUpNext.js) | WhatsUpNext.js |
+| [login-check.js.js](https://github.com/manjunani/HacktoberFest_2021/blob/main/javascript/login-check.js) | adding javascript login checker program I build using js objects|
+| [binary-agents.js](https://github.com/SyedZawwarAhmed/HacktoberFest_2021/blob/my-branch/javascript/binary-agents.js) | Added binary agents algorithm made using js |
+| [SimpleCarts.js](https://github.com/manjunani/HacktoberFest_2021/blob/main/javascript/SimpleCarts.js) | Added simple carts system using js |
+| [ProgressiveTax.js](https://github.com/SyedZawwarAhmed/HacktoberFest_2021/blob/my-branch/javascript/ProgressiveTax.js) | Added example of calculate Progressive Tax using JS |
 
-| Filename       | Description                                      |
-| -------------- | ------------------------------------------------ |
-| ex. sample.js  | ex: it's use/how it work/implementation          |
-| fetchmovie.js  | it fectches a list of movies data from IMDB data |
-| login-check.js | check for valid user with login credential       |
+watch this video [How to create a PULL REQUEST](https://youtu.be/rgbCcBNZcdQ)
 
-**Note: If your file is related to Data Structures and Algorithms Kindly upload them in DSA Folder of this repository**

@@ -1,0 +1,22 @@
+/* body {
+    background-color: chocolate;
+} */
+
+.container,
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+}
