@@ -1,0 +1,32 @@
+#heading1 {
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  color: white;
+  align-items: center;
+}
+
+#done-by {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  color: white;
+  align-items: center;
+}
+.members {
+  width: 200px;
+  justify-content: center;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

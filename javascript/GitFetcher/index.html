@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Git Fetcher</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/styles.css">
+
+<body class="bg-dark text-white">
+  <div class="main">
+    <h1 style="text-align: center;">Git Fetcher</h1>
+  </div>
+  <div class="container">
+    <form>
+      <br><br>
+      <div class="form-group">
+        <input type="range" min="0" max="10000" value="0" class="form-control" id="minimum">
+        <label id="minimumFollowers" for="follower">Minimum Followers: </label>
+      </div>
+      <div class="form-group">
+        <input type="range" min="0" max="10000" value="0" class="form-control" id="maximum">
+        <label id="maximumFollowers" for="follower">Maximum Followers: </label>
+      </div>
+      <div class="form-group">
+        <input type="range" min="0" max="10000" value="0" class="form-control" id="stars">
+        <label id="starred" for="stars">Most Starred</label>
+      </div>
+    </form>
+    <div style="text-align: center;">
+      <u>
+        <h3 id="text-change">Most Followed On Github</h3>
+      </u>
+    </div>
+
+
+
+    <div id="results"></div>
+  </div>
+  <br>
+  <section id="done-by">
+    <h2>Done By</h2>
+    <div class="members">
+      <ul class="links">
+        <a href="https://github.com/UnnikrishnanNP">Unnikrishnan N P</a>
+      </ul>
+    </div>
+  </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
