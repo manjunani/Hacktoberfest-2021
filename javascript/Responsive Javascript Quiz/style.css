@@ -1,0 +1,94 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+html
+{
+    font-size: 62.5%;
+}
+.main-div
+{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #2d3436;
+}
+.inner-div
+{
+    width: 40vw;
+    background-color: #b2bec3;
+    min-height: 30vh;
+    padding: 3rem 8rem;
+    border-radius: 17px;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+.question
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px 10px 40px 0px;
+}
+.inner-div li
+{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 10px;
+    list-style: none;
+}
+input
+{
+    cursor: pointer;
+}
+#submit,
+.btn
+{
+    color: white;
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+    background-color: #0c2461;
+    border-color: black;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+#submit:hover
+{
+    font-size: 22px;
+    transition: 0.3s;
+}
+#showScore
+{
+    background-color: rgb(218, 214, 214);
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+.scoreArea
+{
+    display: none;
+}
+
+@media(max-width: 750px)
+{
+    #submit, .btn {
+        font-size: 15px;
+        display: inline-block;
+    }
+    #submit:hover, .btn:hover {
+        font-size: 15px;
+    }
+    .inner-div {
+        width: 80vw;
+        padding: 1rem 3rem;
+    }
+}
