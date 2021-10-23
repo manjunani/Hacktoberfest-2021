@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Doctor Appointment</title>
+        <link rel="stylesheet" href="3-doctor.css">
+    </head>
+    <body>
+
+        <!--HAMBURGER-->
+
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Creators</a></li>
+                            <li><a href="#">Our Partners</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--NAVIGATION BAR-->
+
+        <header class="showcase">
+            <div class="blank">
+                <p id="logo">
+                    <img src="logof.png" alt="logo2.jpeg">
+                </p>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Creators</a></li>
+                        <li><a href="#">Our Partners</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!--Medicine Home Delivery STARTS-->
+        <!---->
+        <section class="main">
+            <div class="container">
+                <h2>Fill the Details Below</h2>
+
+                <form method="POST" autocomplete="off" name="google-sheet">
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="Name"
+                                    required="required"
+                                    placeholder="Enter Your Fullname">
+                                <span class="text"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="number" name="Mobile"
+                                    required="required"
+                                    placeholder="Enter Your Phone Number">
+                                <span class="text"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="email" name="Email"
+                                    required="required"
+                                    placeholder="Enter Your Email">
+                                <span class="text"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="Address"
+                                    required="required"
+                                    placeholder="Enter Your Address">
+                                <span class="text"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox textarea">
+                                <textarea required="required" name="preference"
+                                    placeholder="Which one do you prefer? VIDEO CHAT or VOICE CHAT"></textarea>
+                                <span class="text"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <div class="submit-class">
+                                <a href="doctor-form-submit.html">
+                                    <button>Submit</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--JAVASCRIPT FORM CODE-->
+
+        <script type="text/javascript">
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx3CJVMRmIdwXOa39HE59iJPZYGmeIbaW_QMYe54WvuUq0ZQbNO3VTwkoYV1Q65h7EX/exec'
+          const form = document.forms['google-sheet']
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => alert("You have successfully submitted the application!"))
+              .catch(error => console.error('Error!', error.message))
+          })
+</script>
+    </body>
+</html>
