@@ -1,0 +1,6 @@
+cv2
+mediapipe
+numpy
+pycaw
+comtypes
+ctypes
