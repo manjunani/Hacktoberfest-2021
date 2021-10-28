@@ -9,6 +9,7 @@ After adding the files here kindly **update the readme.md file** in the below ta
 
 | Filename         | Description                                                        |
 | ---------------- | ------------------------------------------------------------------ |
+| [text_summarizer_script.py](Text%20Summarizer/text_summarizer_script.py)   | This script allows the user to generate short summaries of long text articles |
 | moviepicker.py   | it fectches a list of movies names and their rating from IMDB data |
 | url_shortener.py | URL shortening program using pyshortener lib                       |
 | moviepicker.py|it fectches a list of movies names and their rating from IMDB data|
