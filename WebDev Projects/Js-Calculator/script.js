@@ -10,7 +10,7 @@ function removech() {
     useinp.value = tbcal;
 }
 function execm() {
-    if (tbcal.length == 0 || tbcal == "") {
+    if (!tbcal.length || !tbcal) {
         alert("Needs a input");
         return;
     }

@@ -18,7 +18,7 @@ class Display {
                         </tr>`;
 
         table.innerHTML += Uistring;
-        
+
     }
 
     clear() {
@@ -94,7 +94,7 @@ function libraryFormSubmit(e) {
         display.show('error', 'Sorry you cannot add this book');
     }
 
-    
+
     e.preventDefault();
 
 }
